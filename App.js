@@ -1,20 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View , SafeAreaView } from 'react-native';
+import TodoHedaer from './src/components/TodoHedaer';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView classname="flex-1 border-red-950" >
+      {/* <StatusBar style="auto" /> */}
+      <TodoHedaer/>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // flex: 1,
+    // borderWidth: 1,
+    // borderColor: 'red'
   },
 });
